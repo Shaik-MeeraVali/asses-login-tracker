@@ -1,0 +1,7 @@
+com/login/service/config/LoginConfig.class
+com/login/service/payload/RegistrationRequest.class
+com/login/service/controller/ResttController.class
+com/login/service/entity/User.class
+com/login/service/controller/LogController.class
+com/login/service/service/ServiceImpl.class
+com/login/service/LoginServiceApplication.class

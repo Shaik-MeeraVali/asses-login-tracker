@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/styles.css" rel = "stylesheet"/>
+      <title> Behavioural Assessment Page</title>
+</head>
+<body>
+
+  <form th:method="post"  th:action="@{/behavioural-test}" > 
+<h2> Behavioural Assessment Registration Form</h2>
+
+		<label for="userId">User ID</label>
+    <input type="text" id="userId" placeholder="Enter User ID" name="userId" required>
+    
+    <br/> <br/>
+    
+    <label for="assessment">Assessment</label>
+    <select id="assessment" name="assessment" required>
+		<option>Select Test</option>
+		<option value="step plus">Step Plus</option>
+		<option value="email attequate">Email Etiquette</option>
+		<option value="learning agility">Learning Agility</option>
+		<option value="data privacy">Data Privacy</option>
+	</select>
+    <br/><br/>
+    <label for="date">Select Date</label>
+    <input type="date" id="date", name="date" required>
+    <br/><br/>
+    
+    <button type="submit">Register</button>
+	   </form>
+   
+</body>
+</html>

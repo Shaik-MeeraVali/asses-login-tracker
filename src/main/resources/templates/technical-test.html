@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/styles.css" rel = "stylesheet"/>
+      <title>Technical test Page</title>
+</head>
+<body>
+
+
+  
+<h2> Technical Assessment Registration Form</h2>
+
+	<form th:method="post"  th:action="@{/technical-test}" > 
+		<label for="userId"><b>User ID</b></label>
+    <input type="text" id="userId" placeholder="Enter User ID" name="userId" required>
+    
+    <br/>
+    
+    <label for="assessment"><b>Assessment</b></label>
+    <select id="assessment" name="assessment" required>
+		<option value="java">Java</option>
+		<option value="python">Python</option>
+		<option value="javascript">JavaScript</option>
+		<option value="sql">SQL</option>
+	</select>
+    <br/>
+    <label for="date"><b>Select Date</b></label>
+    <input type="date" id="date", name="date" required>
+    <br/>
+    
+    <button type="submit">Register</button>
+    <h2 th:text="${message}">message</h2>
+	   </form>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/styles.css" rel = "stylesheet"/>
+      <title>Admin Home Page</title>
+</head>
+<body>
+
+ <form  th:method="get"  th:action="@{/adminHome}" > 
+<h2> Admin Activity</h2>
+
+	<a th:href="@{/adminDataPage}">View All Registerations</a>
+   
+</body>
+</html>

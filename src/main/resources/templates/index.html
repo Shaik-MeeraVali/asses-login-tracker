@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset = "ISO-8859-1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/styles.css" rel = "stylesheet"/>
+      <title>Login Form</title>
+   </head>
+   <body>
+	
+	   <h2>Login form</h2>
+	   
+	   <form  th:method="post"  th:action="@{/register}" >
+		   
+		   <label for="username"><b>Username</b></label>
+    <input type="text" id="username" placeholder="Enter Username" name="username" required>
+    
+    <br/>
+    </br>
+    
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <br/>
+    
+    </br>
+    
+    <label for="userLevel"><b>User Level</b></label>
+    <select id="userLevel" name="userLevel" required>
+		<option value="Admin">Admin</option>
+		<option value="Employee">Employee</option>
+	</select>
+    <br/>
+    
+    <button type="submit">Login</button>
+     <h2 th:text="${message}">message</h2>
+	   </form>
+	   
+	   
+	  
+   </body>
+</html>
